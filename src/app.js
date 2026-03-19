@@ -10,8 +10,7 @@ app.use(express.json())
 
 app.get("/api/health", (req,res) => {
     res.json({ok: true, message: "Api corriendo"})
-
-    app.use("/api/task", taskRoutes)
 })
+app.use("/api/task", taskRoutes)
 export default app; 
 
