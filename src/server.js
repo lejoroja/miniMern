@@ -8,7 +8,7 @@ async function main() {
     await connectDB (process.env.MONGO_URI)
 
     app.listen (PORT,() => {
-console.log ('Backend corriendo en http://localhost:${PORT}')
+console.log ('Backend corriendo en http://localhost:'+ PORT)
     })
     
 }

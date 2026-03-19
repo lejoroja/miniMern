@@ -9,7 +9,7 @@ export async function createTask(req,res) {
     const {title}= req.body
     if (!title)return res. status(400).json({message:" Titulo es requerido"})
 
-        const task = await Task.c 
+        const task = await Task.create({title}) 
         res.status(201).json (task)
     
 }
